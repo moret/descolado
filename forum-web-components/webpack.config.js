@@ -9,5 +9,12 @@ module.exports = {
         }
       } 
     ]
-  }
+  },
+  devServer: {
+    allowedHosts: [
+      'descolado-forum-web-components.herokuapp.com',
+      'forum.d9a.com.br'
+    ],
+    port: process.env.PORT || 3333
+  },
 };

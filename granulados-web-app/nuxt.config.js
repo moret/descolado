@@ -17,7 +17,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'http://forum.d9a.com.br:3333/main.js' },
+      { src: 'https://descolado-forum-web-components.herokuapp.com/main.js' || process.env.FORUM_WEB_COMPONENTS_URL },
     ],
   },
 
@@ -53,5 +53,10 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+
+  server: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 4444,
   }
 }

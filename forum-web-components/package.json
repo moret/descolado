@@ -13,6 +13,9 @@
     "webpack-dev-server": "^3.5.1"
   },
   "scripts": {
-    "dev": "webpack-dev-server --host 0.0.0.0 --port 3333 --allowed-hosts forum.d9a.com.br"
+    "dev": "webpack-dev-server --host 0.0.0.0"
+  },
+  "engines": {
+    "yarn": "1.x"
   }
 }
